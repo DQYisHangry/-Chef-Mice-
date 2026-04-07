@@ -1,0 +1,28 @@
+# Web framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# Database
+sqlalchemy[asyncio]==2.0.35
+alembic==1.13.3
+aiosqlite==0.20.0       # async SQLite driver (swap for asyncpg for Postgres)
+greenlet==3.1.1         # required by SQLAlchemy async
+
+# Pydantic
+pydantic[email]==2.9.2
+pydantic-settings==2.5.2
+
+# HTTP client (for recipe APIs)
+httpx==0.27.2
+
+# LLM
+anthropic==0.34.2
+
+# Utilities
+python-dotenv==1.0.1
+python-dateutil==2.9.0
+
+# Dev / testing
+pytest==8.3.3
+pytest-asyncio==0.24.0
+httpx                   # also used as AsyncClient in tests
