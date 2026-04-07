@@ -126,45 +126,6 @@ PATCH  /users/{user_id}/plans/{plan_id}/shopping-list/mark-purchased
 
 ---
 
-## Getting Started
-
-### 1. Clone and install
-
-```bash
-git clone https://github.com/your-username/meal-planner.git
-cd meal-planner
-
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-
-pip install -r requirements.txt
-pip install email-validator greenlet
-```
-
-### 2. Configure environment
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env` and fill in your keys:
-
-```env
-ANTHROPIC_API_KEY=your-key-here
-SPOONACULAR_API_KEY=your-key-here   # needed for Milestone 2+
-```
-
-### 3. Run
-
-```bash
-uvicorn app.main:app --reload
-```
-
-Tables are created automatically on first startup (development mode).
-
-Open **http://127.0.0.1:8000/docs** for the interactive API explorer.
-
----
 
 ## Example Workflow *(once fully implemented)*
 
